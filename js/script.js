@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  AOS.init();
+  window.addEventListener("load", function () {
+    AOS.init();
+    AOS.refresh();
+  });
 
   // 배너 스와이퍼
   var swiper = new Swiper(".laSwiper", {
